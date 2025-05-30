@@ -57,7 +57,6 @@ SmartLeave.sln
 | Mapping              | AutoMapper                         |
 | Docs                 | Swagger (Swashbuckle)              |
 | Misc                 | File Upload, Email, Business Logic |
-| Deployment           | GitHub-ready structure             |
 
 ---
 
@@ -75,19 +74,20 @@ Implement the following roles with proper access restrictions:
 
 ### ✅ API Features (SmartLeave.API)
 
-- [ ] Register/Login/Logout with JWT (ASP.NET Identity)
+- [ ] Register/Login/Logout/ResetPassword with JWT (ASP.NET Identity)
 - [ ] Role-based authorization
 - [ ] Manage Leave Types (CRUD)
 - [ ] Submit Leave Requests
 - [ ] Approve/Reject Leave Requests (based on role)
 - [ ] Upload attachments with leave requests
 - [ ] Send email notifications (on submit/approve)
+- [ ] Global Error Handling
 - [ ] Swagger documentation for all endpoints
 
 ### ✅ MVC Features (SmartLeave.MVC)
 
 - [ ] Login/Register using API
-- [ ] Cookie-based auth
+- [ ] Cookie-based auth or SSO or both of them
 - [ ] Submit leave form (with file upload)
 - [ ] View own leave history
 - [ ] Approve/reject leave (for Managers/Admins)
@@ -152,7 +152,6 @@ dotnet run
 | ----------------------------------- | ----- |
 | Refresh Token Support               | +5    |
 | Unit Tests (at least 2 services)    | +5    |
-| Background Jobs (e.g., email queue) | +5    |
 | Creative AI Usage                   | +5    |
 
 ## 📅 Deadline
